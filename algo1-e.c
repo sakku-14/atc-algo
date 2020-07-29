@@ -73,7 +73,12 @@ int main(void){
     //checker from
     while(i < num){
         while(j < num){
-            printf("%d ", map[i][j]);
+            if(map[i][j] == 0){
+                printf("N");
+            } else {
+                printf("Y");
+            }
+            // printf("%d ", map[i][j]);
             j++;
         }
         printf("\n");
